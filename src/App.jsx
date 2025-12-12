@@ -6,6 +6,7 @@ import Footer from './components/footer.jsx'
 import Navbar from './components/navbar.jsx'
 import Sidebar from './components/sidebar.jsx'
 import DoIt from './components/doit.jsx'
+import Cards from './components/cards.jsx'
 // Here import
 function App() {
 
@@ -13,8 +14,9 @@ function App() {
     <>
      <Navbar />
         <Sidebar />
-          <DoIt />  
-           <Footer/>
+          <DoIt /> 
+            <Cards /> 
+              <Footer/>
      
 {/* Here, HTML with JS dynamically */}
     </>
