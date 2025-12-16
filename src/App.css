@@ -1,14 +1,14 @@
 body {
-  background-color: #F0FCEE;
-  font-family: 'Lobster', cursive;
+  background-color: #f0fcee;
+  font-family: "Lobster", cursive;
   font-weight: 400;
 }
 
-.body-container{
+.body-container {
   width: 80vw;
   height: auto;
   position: relative;
-  border: #A98F89 solid 3px;
+  border: #a98f89 solid 3px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ nav {
   padding: 30px;
 }
 p {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 footer {
   display: flex;
@@ -38,7 +38,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.add-form{
+.add-form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -53,7 +53,7 @@ footer {
   flex: 1;
 }
 .todo-card {
-  background-color: #A98F89;
+  background-color: #a98f89;
   border-radius: 15px;
   padding: 15px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -66,4 +66,14 @@ footer {
 .todo-card p {
   margin: 5px 0;
   color: white;
+}
+
+.trash-icon {
+  color: red;
+}
+
+.delete-button {
+  margin-left: 5px;
+  background-color: #a98f89;
+  border: none;
 }

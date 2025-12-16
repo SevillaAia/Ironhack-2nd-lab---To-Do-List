@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
+
 function Cards() {
 const [todos, setTodos] = useState([
   { id: new Date().getTime(), list: "Buy groceries", time: "9:00 AM" },
@@ -21,9 +24,9 @@ const [todos, setTodos] = useState([
           <p><strong>{todo.list}</strong></p>
           <p>{todo.time}</p>
 
-          <button onClick={() => deleteCard(todo.id)}>
-        del
-       </button>
+          <button onClick={() => deleteCard(todo.id)} className="delete-button">
+            <FontAwesomeIcon icon={faTrash} className="trash-icon"/>
+          </button>
         </div>
       ))}
 
