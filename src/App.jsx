@@ -22,8 +22,11 @@ function App() {
   ]);
 
   const [text, setText] = useState("");
-  const [time, setTime] = useState(timeNow)
-  
+  const [time, setTime] = useState(timeNow);
+
+  const [textEdit, setTextEdit] = useState("");
+  const [timeEdit, setTimeEdit] = useState(timeNow);
+  const [isEditable, setIsEditable] = useState(false);
 
   
   return (
@@ -32,7 +35,7 @@ function App() {
      <Navbar />
         <Sidebar />
           <DoIt todos={todos} setTodos={setTodos} text={text} time={time} setText={setText} setTime={setTime} timeNow={timeNow} /> 
-            <Cards todos={todos} setTodos={setTodos}  /> 
+            <Cards todos={todos} setTodos={setTodos} isEditable={isEditable} setIsEditable={setIsEditable} textEdit={textEdit} setTextEdit={setTextEdit} timeEdit={timeEdit} setTimeEdit={setTimeEdit} timeNow={timeNow} /> 
               <Footer/>
     </div>
      
