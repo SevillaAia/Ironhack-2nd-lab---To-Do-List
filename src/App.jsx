@@ -12,7 +12,7 @@ import About from "./pages/About.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Here import
 function App() {
-  const timeNow = new Date().toISOString(0, 16);
+  const timeNow = new Date().toISOString.slice(0, 16);
 
   const [todos, setTodos] = useState([
     // { id: UUID4(), list: "Buy groceries", time: "9:00 AM" },
