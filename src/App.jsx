@@ -9,7 +9,6 @@ import Sidebar from "./components/sidebar.jsx";
 import DoIt from "./components/doit.jsx";
 import Cards from "./components/cards.jsx";
 import About from "./pages/About.jsx";
-import { v4 as UUID4 } from "uuid";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // Here import
 function App() {
